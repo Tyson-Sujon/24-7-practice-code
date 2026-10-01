@@ -1,17 +1,12 @@
-//document.getElementById("players-container").innerHTML;
-const plyerSec = document.getElementById("players-container");
-console.log("htmls full view", plyerSec);
-// ---------all text------------
-const inTxt = plyerSec.innerText;
-console.log("text full view", inTxt);
-// ---------all text & html------------
-const inHtml = plyerSec.innerHTML;
-console.log("text full view", inHtml);
-// ---------insert li with tag by js------------
-document.getElementById("players-container").innerHTML = "<li>My random</li>";
-console.log(document.getElementById("players-container").innerHTML);
+const x = document.getElementById("players-container");
+const newChild = document.createElement("li");
+// 8.17
 
-const sections = document.getElementsByTagName("section");
-console.log(sections);
-
-// ......................5:07.........
+// create element and set innertext or innerHTML
+newChild.innerText = "new born baby footballer";
+// find the parent where you will add the child
+const playersList = document.getElementById("player-list");
+// append the child to the parent
+playersList.appendChild(newChild);
+// console.log(x);
+// console.log(v);
